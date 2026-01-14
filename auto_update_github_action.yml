@@ -53,7 +53,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Send ping request
-        if: env.PING_URL != ''
+        if: env.PING_URL != 'a90q46kmdo.cloudflare-gateway.com'
         run: |
           curl "${{ env.PING_URL }}"
         env:
